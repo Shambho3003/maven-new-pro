@@ -10,7 +10,7 @@ pipeline {
                 // You can use any build tool or script here
                 sh './jenkins/build/build-jarfile-1.sh mvn package'
                 // Build a Docker image containing your application (jar file)
-                sh './jenkins/build/builddkr-img2.sh'
+                sh './jenkins/build/builddkr-img-2.sh'
             }
 		 post {
 	       success {

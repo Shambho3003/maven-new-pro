@@ -25,9 +25,9 @@ pipeline {
             steps {
                 // Run tests for your application
                 // You can use any testing framework or script here
-                sh './jenkins/test/test-mvn-build3.sh mvn test'
+                sh './jenkins/test/test-mvn-build-3.sh mvn test'
                 // Push your Docker image to Docker Hub
-                sh './jenkins/test/push-dkr-img-hub-4.sh'
+                //sh './jenkin/test/push-dkr-img-hub-4.sh'
             }
 		 post {
                success {

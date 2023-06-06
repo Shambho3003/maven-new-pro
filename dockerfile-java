@@ -1,0 +1,8 @@
+FROM openjdk
+
+RUN mkdir /app
+
+COPY java-app/target/*.jar /app/app.jar
+
+CMD java -jar /app/app.jar
+ 
